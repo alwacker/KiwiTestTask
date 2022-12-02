@@ -7,23 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D42384D62939240E0013D2C3 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384D52939240E0013D2C3 /* Date+String.swift */; };
+		D42384D829393FA90013D2C3 /* Int+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384D729393FA90013D2C3 /* Int+Date.swift */; };
+		D42384DB293951030013D2C3 /* FlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384DA293951030013D2C3 /* FlightView.swift */; };
+		D42384DE2939516A0013D2C3 /* CustomDatePickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384DD2939516A0013D2C3 /* CustomDatePickerStyle.swift */; };
+		D42384E0293951AD0013D2C3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384DF293951AD0013D2C3 /* ImageCache.swift */; };
+		D42384E42939523D0013D2C3 /* CacheImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384E32939523D0013D2C3 /* CacheImageView.swift */; };
+		D42384E6293952750013D2C3 /* ImageCacheAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384E5293952750013D2C3 /* ImageCacheAdapter.swift */; };
+		D42384E92939537F0013D2C3 /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384E82939537F0013D2C3 /* FlightDetailView.swift */; };
+		D42384EE293953D30013D2C3 /* FlightsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384ED293953D30013D2C3 /* FlightsModuleRouter.swift */; };
+		D42384F02939572D0013D2C3 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384EF2939572D0013D2C3 /* Gradient.swift */; };
+		D42384F2293977E10013D2C3 /* FlightDetailBodyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384F1293977E10013D2C3 /* FlightDetailBodyItem.swift */; };
+		D42384F4293978080013D2C3 /* FlightDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384F3293978080013D2C3 /* FlightDetailHeaderView.swift */; };
+		D42384F629397EAB0013D2C3 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384F529397EAB0013D2C3 /* SpinnerView.swift */; };
+		D42384F92939860F0013D2C3 /* FlightsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42384F82939860F0013D2C3 /* FlightsEntity.swift */; };
 		D45CE0762937D75A0075E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0752937D75A0075E977 /* AppDelegate.swift */; };
 		D45CE0782937D75A0075E977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0772937D75A0075E977 /* SceneDelegate.swift */; };
-		D45CE07A2937D75A0075E977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0792937D75A0075E977 /* ViewController.swift */; };
-		D45CE07D2937D75A0075E977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45CE07B2937D75A0075E977 /* Main.storyboard */; };
 		D45CE07F2937D75A0075E977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45CE07E2937D75A0075E977 /* Assets.xcassets */; };
 		D45CE0822937D75A0075E977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45CE0802937D75A0075E977 /* LaunchScreen.storyboard */; };
+		D45CE08E2937D7A40075E977 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE08B2937D7A40075E977 /* TransitionHandler.swift */; };
+		D45CE08F2937D7A40075E977 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE08C2937D7A40075E977 /* NavigationViewController.swift */; };
+		D45CE0902937D7A40075E977 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE08D2937D7A40075E977 /* Navigator.swift */; };
+		D45CE0AE2937D7B00075E977 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0922937D7B00075E977 /* ApiError.swift */; };
+		D45CE0AF2937D7B00075E977 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0932937D7B00075E977 /* BaseApi.swift */; };
+		D45CE0B02937D7B00075E977 /* ApiGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0942937D7B00075E977 /* ApiGateway.swift */; };
+		D45CE0B12937D7B00075E977 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0952937D7B00075E977 /* ApiProvider.swift */; };
+		D45CE0B22937D7B00075E977 /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0962937D7B00075E977 /* ApiEndPoint.swift */; };
+		D45CE0B32937D7B00075E977 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0982937D7B00075E977 /* DIContainer.swift */; };
+		D45CE0BD2937D7B00075E977 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0A82937D7B00075E977 /* AppModule.swift */; };
+		D45CE0BE2937D7B00075E977 /* AppRouter+TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0AA2937D7B00075E977 /* AppRouter+TransitionHandler.swift */; };
+		D45CE0BF2937D7B00075E977 /* AppRouterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0AB2937D7B00075E977 /* AppRouterOptions.swift */; };
+		D45CE0C02937D7B00075E977 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0AC2937D7B00075E977 /* AppRouter.swift */; };
+		D45CE0C12937D7B00075E977 /* AppRouter+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0AD2937D7B00075E977 /* AppRouter+Show.swift */; };
+		D45CE0C72937D7E10075E977 /* CombineExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0C42937D7E10075E977 /* CombineExtensions.swift */; };
+		D45CE0C82937D7E10075E977 /* ResponseJSONPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0C52937D7E10075E977 /* ResponseJSONPublisher.swift */; };
+		D45CE0C92937D7E10075E977 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0C62937D7E10075E977 /* String+Date.swift */; };
+		D45CE0CE2937E7A70075E977 /* PopularFlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0CD2937E7A70075E977 /* PopularFlightsView.swift */; };
+		D45CE0D02937E7BE0075E977 /* PopularFlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0CF2937E7BE0075E977 /* PopularFlightsViewModel.swift */; };
+		D45CE0D3293901470075E977 /* FlightsModuleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0D2293901470075E977 /* FlightsModuleService.swift */; };
+		D45CE0D5293903090075E977 /* AppURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CE0D4293903090075E977 /* AppURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D42384D52939240E0013D2C3 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		D42384D729393FA90013D2C3 /* Int+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Date.swift"; sourceTree = "<group>"; };
+		D42384DA293951030013D2C3 /* FlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightView.swift; sourceTree = "<group>"; };
+		D42384DD2939516A0013D2C3 /* CustomDatePickerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerStyle.swift; sourceTree = "<group>"; };
+		D42384DF293951AD0013D2C3 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D42384E32939523D0013D2C3 /* CacheImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImageView.swift; sourceTree = "<group>"; };
+		D42384E5293952750013D2C3 /* ImageCacheAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheAdapter.swift; sourceTree = "<group>"; };
+		D42384E82939537F0013D2C3 /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
+		D42384ED293953D30013D2C3 /* FlightsModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsModuleRouter.swift; sourceTree = "<group>"; };
+		D42384EF2939572D0013D2C3 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		D42384F1293977E10013D2C3 /* FlightDetailBodyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailBodyItem.swift; sourceTree = "<group>"; };
+		D42384F3293978080013D2C3 /* FlightDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailHeaderView.swift; sourceTree = "<group>"; };
+		D42384F529397EAB0013D2C3 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		D42384F82939860F0013D2C3 /* FlightsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsEntity.swift; sourceTree = "<group>"; };
 		D45CE0722937D75A0075E977 /* KiwiTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45CE0752937D75A0075E977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D45CE0772937D75A0075E977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D45CE0792937D75A0075E977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D45CE07C2937D75A0075E977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D45CE07E2937D75A0075E977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45CE0812937D75A0075E977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45CE0832937D75A0075E977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45CE08B2937D7A40075E977 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		D45CE08C2937D7A40075E977 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		D45CE08D2937D7A40075E977 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D45CE0922937D7B00075E977 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		D45CE0932937D7B00075E977 /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		D45CE0942937D7B00075E977 /* ApiGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGateway.swift; sourceTree = "<group>"; };
+		D45CE0952937D7B00075E977 /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		D45CE0962937D7B00075E977 /* ApiEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		D45CE0982937D7B00075E977 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		D45CE0A82937D7B00075E977 /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		D45CE0AA2937D7B00075E977 /* AppRouter+TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppRouter+TransitionHandler.swift"; sourceTree = "<group>"; };
+		D45CE0AB2937D7B00075E977 /* AppRouterOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouterOptions.swift; sourceTree = "<group>"; };
+		D45CE0AC2937D7B00075E977 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		D45CE0AD2937D7B00075E977 /* AppRouter+Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppRouter+Show.swift"; sourceTree = "<group>"; };
+		D45CE0C42937D7E10075E977 /* CombineExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineExtensions.swift; sourceTree = "<group>"; };
+		D45CE0C52937D7E10075E977 /* ResponseJSONPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONPublisher.swift; sourceTree = "<group>"; };
+		D45CE0C62937D7E10075E977 /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		D45CE0CD2937E7A70075E977 /* PopularFlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularFlightsView.swift; sourceTree = "<group>"; };
+		D45CE0CF2937E7BE0075E977 /* PopularFlightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularFlightsViewModel.swift; sourceTree = "<group>"; };
+		D45CE0D2293901470075E977 /* FlightsModuleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsModuleService.swift; sourceTree = "<group>"; };
+		D45CE0D4293903090075E977 /* AppURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +103,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D42384D9293950F20013D2C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0CD2937E7A70075E977 /* PopularFlightsView.swift */,
+				D42384DA293951030013D2C3 /* FlightView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D42384DC2939514D0013D2C3 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				D42384DD2939516A0013D2C3 /* CustomDatePickerStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		D42384E12939520C0013D2C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D42384DC2939514D0013D2C3 /* Styles */,
+				D42384E2293952160013D2C3 /* View */,
+				D42384EF2939572D0013D2C3 /* Gradient.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D42384E2293952160013D2C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D42384E32939523D0013D2C3 /* CacheImageView.swift */,
+				D42384F529397EAB0013D2C3 /* SpinnerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D42384E7293952880013D2C3 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				D42384DF293951AD0013D2C3 /* ImageCache.swift */,
+				D42384E5293952750013D2C3 /* ImageCacheAdapter.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		D42384EC293953940013D2C3 /* FlightDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D42384E82939537F0013D2C3 /* FlightDetailView.swift */,
+				D42384F1293977E10013D2C3 /* FlightDetailBodyItem.swift */,
+				D42384F3293978080013D2C3 /* FlightDetailHeaderView.swift */,
+			);
+			path = FlightDetail;
+			sourceTree = "<group>";
+		};
+		D42384F7293986010013D2C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D42384F82939860F0013D2C3 /* FlightsEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D45CE0692937D75A0075E977 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +187,127 @@
 			children = (
 				D45CE0752937D75A0075E977 /* AppDelegate.swift */,
 				D45CE0772937D75A0075E977 /* SceneDelegate.swift */,
-				D45CE0792937D75A0075E977 /* ViewController.swift */,
-				D45CE07B2937D75A0075E977 /* Main.storyboard */,
+				D42384E12939520C0013D2C3 /* Components */,
+				D45CE08A2937D7A40075E977 /* UI */,
+				D45CE0972937D7B00075E977 /* DI */,
+				D45CE0992937D7B00075E977 /* Modules */,
+				D45CE0912937D7B00075E977 /* Service */,
+				D45CE0C22937D7E10075E977 /* Extensions */,
+				D45CE0892937D7830075E977 /* Resources */,
+			);
+			path = KiwiTestTask;
+			sourceTree = "<group>";
+		};
+		D45CE0892937D7830075E977 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D45CE07E2937D75A0075E977 /* Assets.xcassets */,
 				D45CE0802937D75A0075E977 /* LaunchScreen.storyboard */,
 				D45CE0832937D75A0075E977 /* Info.plist */,
 			);
-			path = KiwiTestTask;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D45CE08A2937D7A40075E977 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE08B2937D7A40075E977 /* TransitionHandler.swift */,
+				D45CE08C2937D7A40075E977 /* NavigationViewController.swift */,
+				D45CE08D2937D7A40075E977 /* Navigator.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D45CE0912937D7B00075E977 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0922937D7B00075E977 /* ApiError.swift */,
+				D45CE0932937D7B00075E977 /* BaseApi.swift */,
+				D45CE0942937D7B00075E977 /* ApiGateway.swift */,
+				D45CE0952937D7B00075E977 /* ApiProvider.swift */,
+				D45CE0962937D7B00075E977 /* ApiEndPoint.swift */,
+				D45CE0D4293903090075E977 /* AppURL.swift */,
+				D42384E7293952880013D2C3 /* ImageCache */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D45CE0972937D7B00075E977 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0982937D7B00075E977 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D45CE0992937D7B00075E977 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0CC2937E77F0075E977 /* FlightsModule */,
+				D45CE0A72937D7B00075E977 /* AppModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D45CE0A72937D7B00075E977 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0A82937D7B00075E977 /* AppModule.swift */,
+				D45CE0A92937D7B00075E977 /* Router */,
+			);
+			path = AppModule;
+			sourceTree = "<group>";
+		};
+		D45CE0A92937D7B00075E977 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0AA2937D7B00075E977 /* AppRouter+TransitionHandler.swift */,
+				D45CE0AB2937D7B00075E977 /* AppRouterOptions.swift */,
+				D45CE0AC2937D7B00075E977 /* AppRouter.swift */,
+				D45CE0AD2937D7B00075E977 /* AppRouter+Show.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D45CE0C22937D7E10075E977 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0C32937D7E10075E977 /* Combine */,
+				D45CE0C52937D7E10075E977 /* ResponseJSONPublisher.swift */,
+				D45CE0C62937D7E10075E977 /* String+Date.swift */,
+				D42384D729393FA90013D2C3 /* Int+Date.swift */,
+				D42384D52939240E0013D2C3 /* Date+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D45CE0C32937D7E10075E977 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				D45CE0C42937D7E10075E977 /* CombineExtensions.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		D45CE0CC2937E77F0075E977 /* FlightsModule */ = {
+			isa = PBXGroup;
+			children = (
+				D42384F7293986010013D2C3 /* Model */,
+				D42384EC293953940013D2C3 /* FlightDetail */,
+				D45CE0D12939012B0075E977 /* PopularFlights */,
+				D45CE0D2293901470075E977 /* FlightsModuleService.swift */,
+				D42384ED293953D30013D2C3 /* FlightsModuleRouter.swift */,
+			);
+			path = FlightsModule;
+			sourceTree = "<group>";
+		};
+		D45CE0D12939012B0075E977 /* PopularFlights */ = {
+			isa = PBXGroup;
+			children = (
+				D42384D9293950F20013D2C3 /* View */,
+				D45CE0CF2937E7BE0075E977 /* PopularFlightsViewModel.swift */,
+			);
+			path = PopularFlights;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +370,6 @@
 			files = (
 				D45CE0822937D75A0075E977 /* LaunchScreen.storyboard in Resources */,
 				D45CE07F2937D75A0075E977 /* Assets.xcassets in Resources */,
-				D45CE07D2937D75A0075E977 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +380,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45CE07A2937D75A0075E977 /* ViewController.swift in Sources */,
+				D45CE0BE2937D7B00075E977 /* AppRouter+TransitionHandler.swift in Sources */,
+				D42384E92939537F0013D2C3 /* FlightDetailView.swift in Sources */,
+				D45CE0AF2937D7B00075E977 /* BaseApi.swift in Sources */,
+				D45CE0BD2937D7B00075E977 /* AppModule.swift in Sources */,
+				D45CE0B32937D7B00075E977 /* DIContainer.swift in Sources */,
+				D45CE08F2937D7A40075E977 /* NavigationViewController.swift in Sources */,
+				D45CE0902937D7A40075E977 /* Navigator.swift in Sources */,
 				D45CE0762937D75A0075E977 /* AppDelegate.swift in Sources */,
+				D42384F02939572D0013D2C3 /* Gradient.swift in Sources */,
 				D45CE0782937D75A0075E977 /* SceneDelegate.swift in Sources */,
+				D45CE0B22937D7B00075E977 /* ApiEndPoint.swift in Sources */,
+				D42384F92939860F0013D2C3 /* FlightsEntity.swift in Sources */,
+				D42384DE2939516A0013D2C3 /* CustomDatePickerStyle.swift in Sources */,
+				D45CE0C82937D7E10075E977 /* ResponseJSONPublisher.swift in Sources */,
+				D45CE08E2937D7A40075E977 /* TransitionHandler.swift in Sources */,
+				D42384D829393FA90013D2C3 /* Int+Date.swift in Sources */,
+				D42384DB293951030013D2C3 /* FlightView.swift in Sources */,
+				D45CE0D5293903090075E977 /* AppURL.swift in Sources */,
+				D45CE0B12937D7B00075E977 /* ApiProvider.swift in Sources */,
+				D45CE0AE2937D7B00075E977 /* ApiError.swift in Sources */,
+				D45CE0C02937D7B00075E977 /* AppRouter.swift in Sources */,
+				D42384F629397EAB0013D2C3 /* SpinnerView.swift in Sources */,
+				D42384E42939523D0013D2C3 /* CacheImageView.swift in Sources */,
+				D45CE0CE2937E7A70075E977 /* PopularFlightsView.swift in Sources */,
+				D45CE0C92937D7E10075E977 /* String+Date.swift in Sources */,
+				D45CE0BF2937D7B00075E977 /* AppRouterOptions.swift in Sources */,
+				D45CE0D02937E7BE0075E977 /* PopularFlightsViewModel.swift in Sources */,
+				D42384F4293978080013D2C3 /* FlightDetailHeaderView.swift in Sources */,
+				D42384F2293977E10013D2C3 /* FlightDetailBodyItem.swift in Sources */,
+				D45CE0D3293901470075E977 /* FlightsModuleService.swift in Sources */,
+				D42384D62939240E0013D2C3 /* Date+String.swift in Sources */,
+				D42384EE293953D30013D2C3 /* FlightsModuleRouter.swift in Sources */,
+				D45CE0B02937D7B00075E977 /* ApiGateway.swift in Sources */,
+				D42384E6293952750013D2C3 /* ImageCacheAdapter.swift in Sources */,
+				D45CE0C72937D7E10075E977 /* CombineExtensions.swift in Sources */,
+				D42384E0293951AD0013D2C3 /* ImageCache.swift in Sources */,
+				D45CE0C12937D7B00075E977 /* AppRouter+Show.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D45CE07B2937D75A0075E977 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D45CE07C2937D75A0075E977 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D45CE0802937D75A0075E977 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +557,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXZ7LH92J7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KiwiTestTask/Info.plist;
+				INFOPLIST_FILE = KiwiTestTask/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +586,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXZ7LH92J7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KiwiTestTask/Info.plist;
+				INFOPLIST_FILE = KiwiTestTask/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
